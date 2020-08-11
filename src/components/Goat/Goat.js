@@ -1,8 +1,14 @@
 import React from 'react';
 
+import goatShape from '../../helpers/propz/goatShape';
+
 import './Goat.scss';
 
 class Goat extends React.Component {
+  static propTypes = {
+    goat: goatShape.goatShape,
+  }
+
   render() {
     const { goat } = this.props;
 
